@@ -29,6 +29,8 @@ TARGET_RECOVERY_DEVICE_MODULES := init_oppo_R9Plus
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
+BOARD_CUSTOM_BOOTIMG := true
+BOARD_CUSTOM_BOOTIMG_MK := $(DEVICE_PATH)/mkbootimg.mk
 TARGET_KERNEL_CONFIG := lineageos_R9Plus_defconfig
 TARGET_KERNEL_RECOVERY_CONFIG := lineageos_R9Plus_recovery_defconfig
 
