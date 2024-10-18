@@ -27,7 +27,7 @@ PRODUCT_MODEL := OPPO R9 Plus
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE=R9Plus \
-    PRIVATE_BUILD_DESC="msm8952_64-user 6.0.1 MMB29M eng.root.20181020.181815 dev-keys"
-
-BUILD_FINGERPRINT := "OPPO/R9PlusmA/R9PlusA:6.0.1/MMB29M/1481606711:user/release-keys"
+    BuildDesc="msm8952_64-user 6.0.1 MMB29M eng.root.20181020.181815 dev-keys" \
+    BuildFingerprint="OPPO/R9PlusmA/R9PlusA:6.0.1/MMB29M/1481606711:user/release-keys" \
+    DeviceName="R9Plus" \
+    DeviceProduct="R9Plus" \
