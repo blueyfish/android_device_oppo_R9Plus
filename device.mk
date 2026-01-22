@@ -4,19 +4,16 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/oppo/R9s
+DEVICE_PATH := device/oppo/R9sPlus
 
 # Inherit from the common device configuration.
-TARGET_OPPO_PLATFORM := msm8953
+TARGET_OPPO_PLATFORM := msm8952
 $(call inherit-product, device/oppo/thortanium-common/thortanium.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay \
     $(DEVICE_PATH)/overlay-lineage
-
-PRODUCT_PACKAGES += \
-    FrameworkResOverlayDevice16017
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -36,11 +33,10 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    R9s_camera_config.xml
+    R9sPlus_camera_config.xml
 
 # Input
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/keylayout/synaptics_s1302.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/synaptics_s1302.kl \
     $(DEVICE_PATH)/keylayout/synaptics-s3320.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/synaptics-s3320.kl
 
 # Rootdir
@@ -62,4 +58,4 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/wifi/WCNSS_qcom_wlan_nv_16317_second.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/16317_second/WCNSS_qcom_wlan_nv.bin
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/oppo/R9s/R9s-vendor.mk)
+$(call inherit-product, vendor/oppo/R9sPlus/R9sPlus-vendor.mk)

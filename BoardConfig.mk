@@ -4,13 +4,13 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/oppo/R9s
+DEVICE_PATH := device/oppo/R9sPlus
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := msm8953
+TARGET_BOOTLOADER_BOARD_NAME := msm8952
 
 # Platform
-TARGET_BOARD_PLATFORM := msm8953
+TARGET_BOARD_PLATFORM := msm8952
 
 # Inherit from common device tree
 include device/oppo/thortanium-common/BoardConfigCommon.mk
@@ -22,17 +22,15 @@ TARGET_BROKEN_REPROCESS_BACKEND := true
 TARGET_SCREEN_DENSITY := 400
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_oppo_R9s
-TARGET_RECOVERY_DEVICE_MODULES := init_oppo_R9s
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_oppo_R9sPlus
+TARGET_RECOVERY_DEVICE_MODULES := init_oppo_R9sPlus
 
 # HIDL
-ODM_MANIFEST_SKUS += 16017 16027
-ODM_MANIFEST_16017_FILES := $(DEVICE_PATH)/manifest_16017.xml
-ODM_MANIFEST_16027_FILES := $(DEVICE_PATH)/manifest_16027.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
 # Kernel
-TARGET_KERNEL_CONFIG := lineageos_R9s_defconfig
-TARGET_KERNEL_RECOVERY_CONFIG := lineageos_R9s_recovery_defconfig
+TARGET_KERNEL_CONFIG := lineageos_R9sPlus_defconfig
+TARGET_KERNEL_RECOVERY_CONFIG := lineageos_R9sPlus_recovery_defconfig
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop

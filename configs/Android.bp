@@ -5,7 +5,7 @@
 //
 
 prebuilt_etc_xml {
-    name: "R9s_camera_config.xml",
+    name: "R9sPlus_camera_config.xml",
 
     required: [
         "imx298_chromatix.xml",

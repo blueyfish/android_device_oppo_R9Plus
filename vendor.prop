@@ -1,5 +1,5 @@
 # SoC
-ro.soc.model=MSM8953
+ro.soc.model=MSM8976Pro
 
 # USB
-vendor.usb.controller=7000000.dwc3
+vendor.usb.controller=msm_hsusb
