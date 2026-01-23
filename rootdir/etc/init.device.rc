@@ -17,6 +17,4 @@ on early-init
     mount overlay overlay /vendor/firmware/wlan/prima ro lowerdir=/vendor/firmware/wlan/${ro.vendor.wifi.nv}:/vendor/firmware/wlan/prima
 
     # Miscellaneous variant specific files
-    mount overlay overlay /vendor/etc/acdbdata/MTP ro lowerdir=/vendor/etc/acdbdata/${ro.separate.soft}:/vendor/etc/acdbdata/MTP
     mount overlay overlay /vendor/etc/sensors ro lowerdir=/vendor/etc/sensor_def/${ro.separate.soft}:/vendor/etc/sensors
-    write /sys/module/snd_soc_tfa98xx/parameters/fw_name tfa98xx_${ro.separate.soft}.cnt

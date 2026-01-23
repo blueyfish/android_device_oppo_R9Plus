@@ -1,26 +1,19 @@
-# All unpinned blobs below are extracted from R9s_11.A.53_0530_201904131805
-# CPH1607 Package version: CPH1607EX_11_A.25_190425
+# All unpinned blobs below are extracted from R9sPlus_11.A.15_0150_201908191412
+# CPH1611 Package version: CPH1611EX_11.A.22_INT_022_201903070923
 # A57 Package version: A57_11.A.32_0320_201912050917
+# R9s Package version: R9s_11.A.53_0530_201904131805
 
 # ACDB
-system/etc/acdbdata/16017/Bluetooth_cal.acdb:vendor/etc/acdbdata/16017/MTP_Bluetooth_cal.acdb
-system/etc/acdbdata/16017/General_cal.acdb:vendor/etc/acdbdata/16017/MTP_General_cal.acdb
-system/etc/acdbdata/16017/Global_cal.acdb:vendor/etc/acdbdata/16017/MTP_Global_cal.acdb
-system/etc/acdbdata/16017/Handset_cal.acdb:vendor/etc/acdbdata/16017/MTP_Handset_cal.acdb
-system/etc/acdbdata/16017/Hdmi_cal.acdb:vendor/etc/acdbdata/16017/MTP_Hdmi_cal.acdb
-system/etc/acdbdata/16017/Headset_cal.acdb:vendor/etc/acdbdata/16017/MTP_Headset_cal.acdb
-system/etc/acdbdata/16017/Speaker_cal.acdb:vendor/etc/acdbdata/16017/MTP_Speaker_cal.acdb
-system/etc/acdbdata/16027/Bluetooth_cal.acdb:vendor/etc/acdbdata/16027/MTP_Bluetooth_cal.acdb
-system/etc/acdbdata/16027/General_cal.acdb:vendor/etc/acdbdata/16027/MTP_General_cal.acdb
-system/etc/acdbdata/16027/Global_cal.acdb:vendor/etc/acdbdata/16027/MTP_Global_cal.acdb
-system/etc/acdbdata/16027/Handset_cal.acdb:vendor/etc/acdbdata/16027/MTP_Handset_cal.acdb
-system/etc/acdbdata/16027/Hdmi_cal.acdb:vendor/etc/acdbdata/16027/MTP_Hdmi_cal.acdb
-system/etc/acdbdata/16027/Headset_cal.acdb:vendor/etc/acdbdata/16027/MTP_Headset_cal.acdb
-system/etc/acdbdata/16027/Speaker_cal.acdb:vendor/etc/acdbdata/16027/MTP_Speaker_cal.acdb
+system/etc/acdbdata/16037/Bluetooth_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
+system/etc/acdbdata/16037/General_cal.acdb:vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
+system/etc/acdbdata/16037/Global_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb
+system/etc/acdbdata/16037/Handset_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb
+system/etc/acdbdata/16037/Hdmi_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
+system/etc/acdbdata/16037/Headset_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
+system/etc/acdbdata/16037/Speaker_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 
 # Audio firmware
-system/etc/firmware/tfa98xx_16017.cnt:vendor/firmware/tfa98xx_16017.cnt
-system/etc/firmware/tfa98xx_16027.cnt:vendor/firmware/tfa98xx_16027.cnt
+system/etc/firmware/tfa98xx.cnt:vendor/firmware/tfa98xx.cnt
 
 # Camera - from A57
 system/bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon|f43137738f2c97bce97e7dec86adcb3c7aaa698a|5d0dcec2c198cbd8df186ad445a0eefbea4bb6a2
@@ -287,9 +280,6 @@ vendor/lib/libmmcamera_s5k3p3sp.so|e49deb787fb7090cda7b0b0940af3c4de87941cd
 vendor/lib/libmmcamera_s5k3p8.so|11de89a1750dcf6e45ffc797044e6bdbd590d1f3
 vendor/lib/libmmcamera_s5k3p8sp.so|b279493bae590b6b5b27b89c7d3cc306619cf299
 
-# Camera isp
-vendor/lib/libmmcamera_isp_color_correct40.so
-
 # Camera isp - from A57
 vendor/lib/libmmcamera_isp_abf40.so|d15c61bef717917c74a7ba50b82ac6eff43dc5f7
 vendor/lib/libmmcamera_isp_bcc40.so|c4209d596631deb6d8d37827ae869751666e1c49
@@ -325,47 +315,47 @@ vendor/lib/libmmcamera_isp_sub_module.so|72704f3c73da3b15f99e4390871d2ae82ac6401
 vendor/lib/libmmcamera_isp_template.so|fca1a66defd9c4f540971f486cff74c42732f1d2
 vendor/lib/libmmcamera_isp_wb40.so|af0b0b004fa91f53a7a65258112d2bfe4e7e2077
 
+# Camera isp - from R9s
+vendor/lib/libmmcamera_isp_color_correct40.so|58307a0452b00aa795715fdee7798baa3598637a
+
 # Camera PDAF - from A57
 vendor/lib/libSonyIMX298PdafLibrary.so|35639e3e12e35337cb984a7c52637426e6758d83|4d275365597ab05b0f32d4cebd4aec695bc8fada
 
-# Fingerprint - FPC - from CPH1607
-system/lib64/hw/fingerprint.msm8953.so:vendor/lib64/hw/fingerprint.msm8953.so|ca68f21ef18e0b724db09eb769888ba4fa92bad6|0fc87c46217b29dd2c15698c6544a9fdaa1f0eb0
-system/lib64/lib_fpc_tac_shared.so:vendor/lib64/lib_fpc_tac_shared.so|b48dd01a3b99a8bc8330b6e4415c142880e922e6|040d844f882d445e9b10c7efbe48f5634f8cc280
-system/lib64/libalipay_factory.so:vendor/lib64/libalipay_factory.so|ace688575083ff4fac840370ce9340262be9d00d|018eaef5a3d076a8b0a7dadffbce774ad55ce404
+# Fingerprint - FPC - from CPH1611
+system/lib64/hw/fingerprint.msm8952.so:vendor/lib64/hw/fingerprint.msm8952.so|b3932357a934b7a01b3f3d8603e3c6433fd20842|a19a8921787d83809e777a5cbc30ae470720525a
+system/lib64/lib_fpc_tac_shared.so:vendor/lib64/lib_fpc_tac_shared.so|dbf3233edcaa0a7c5e879ebd7129bd4912f7db39|500716025ae500bd2b69a7ab2a3f589183fd4a39
+system/lib64/libalipay_factory.so:vendor/lib64/libalipay_factory.so|068394ff30d96e8f6a2d659ce26e95935d4e631e|52a58ca9227c8286dd39ef6197eaecc913dfeb35
 
-# Fingerprint - Alipay firmware - from CPH1607
-system/etc/firmware/alipay.b00:vendor/firmware/alipay.b00|9dd173e4faceb2b276d4847dbb5b2a1f397de2e4
-system/etc/firmware/alipay.b01:vendor/firmware/alipay.b01|09f146171e8a672f70a2e3f4cc894260afcd3256
-system/etc/firmware/alipay.b02:vendor/firmware/alipay.b02|ac13241b11af39a17ae43fb420e51cd5bd8f5f96
-system/etc/firmware/alipay.b03:vendor/firmware/alipay.b03|4e686fa78b2d0bd5d0e7178eb021de5ff379d747
-system/etc/firmware/alipay.b04:vendor/firmware/alipay.b04|070ecacd3e7861002d2d52d474203a1e4bd1a937
+# Fingerprint - Alipay firmware - from CPH1611
+system/etc/firmware/alipay.b00:vendor/firmware/alipay.b00|d672d8bd2c0c89304ab64265e36dd563e207e6a8
+system/etc/firmware/alipay.b01:vendor/firmware/alipay.b01|a33434df2e4305b85980005f6331aba860a076b0
+system/etc/firmware/alipay.b02:vendor/firmware/alipay.b02|d726e27cc5400f36f57e6c8e7bf53f8f99eba100
+system/etc/firmware/alipay.b03:vendor/firmware/alipay.b03|836b99b9fa2266425de822c83d2121f5ebd35833
+system/etc/firmware/alipay.b04:vendor/firmware/alipay.b04|a778fb24ce4f7255e7e9f6d3854c806088cdb4b1
 system/etc/firmware/alipay.b05:vendor/firmware/alipay.b05|648187fbf1a063bb4a637d99b2866c057ba99fcf
 system/etc/firmware/alipay.b06:vendor/firmware/alipay.b06|aaa8b57e75a45ec6193d18a601f7115613072b79
-system/etc/firmware/alipay.mdt:vendor/firmware/alipay.mdt|71c32fe501ee2c455a4aeec1b62d9bb2cfc7d048
+system/etc/firmware/alipay.mdt:vendor/firmware/alipay.mdt|abcd8a7a4c58caeac854b6546b13b7e5b5b3be45
 
-# Fingerprint - FPC firmware - from CPH1607
-system/etc/firmware/fingerprint.b00:vendor/firmware/fingerprint.b00|22912d59d481d844b58079ed32a7e90af8a1bcaa
-system/etc/firmware/fingerprint.b01:vendor/firmware/fingerprint.b01|bb8389b6114f0f95aa08bfd179bc15b4661bc47a
-system/etc/firmware/fingerprint.b02:vendor/firmware/fingerprint.b02|b7f8565c88f65d0a974c52ba5edf921ece9625c5
-system/etc/firmware/fingerprint.b03:vendor/firmware/fingerprint.b03|f5fb7954df0af21f55ac00769c400c0ff90b9420
-system/etc/firmware/fingerprint.b04:vendor/firmware/fingerprint.b04|d4924a57836d062463aa4caaa497669f03de372c
+# Fingerprint - FPC firmware - from CPH1611
+system/etc/firmware/fingerprint.b00:vendor/firmware/fingerprint.b00|b967543c6be1d23c31c6fd472fe86c93b1e2e980
+system/etc/firmware/fingerprint.b01:vendor/firmware/fingerprint.b01|3a3f850215fe8169870a065e9d3493988800b7e4
+system/etc/firmware/fingerprint.b02:vendor/firmware/fingerprint.b02|3da275e9ab0cff4bc119528fc95edb47996e03ba
+system/etc/firmware/fingerprint.b03:vendor/firmware/fingerprint.b03|ec1c8793ae0a34e85449155e689a6cf49acdd97f
+system/etc/firmware/fingerprint.b04:vendor/firmware/fingerprint.b04|2f48f31504f0713299ce676ca9a90965e7a0064b
 system/etc/firmware/fingerprint.b05:vendor/firmware/fingerprint.b05|74a2339683cb21e20267c092900ad9c942b816a7
 system/etc/firmware/fingerprint.b06:vendor/firmware/fingerprint.b06|341f188722aab317d78fdbdfdd0fbe52b2c0f25f
-system/etc/firmware/fingerprint.mdt:vendor/firmware/fingerprint.mdt|e73cf6ca3b5980112cb32180b5a3ef8dbe1ef03e
-
-# Graphics firmware
-vendor/firmware/a506_zap.b00
-vendor/firmware/a506_zap.b01
-vendor/firmware/a506_zap.b02
-vendor/firmware/a506_zap.mdt
+system/etc/firmware/fingerprint.mdt:vendor/firmware/fingerprint.mdt|2497e566ed8e34b9414ed52f26dfcee4ab5bbef3
 
 # Radio
 system/bin/rmt_storage:vendor/bin/rmt_storage
 
-# Radio - from CPH1607
-vendor/lib64/libqmiservices.so:vendor/lib64/libQmiservices.so|329bd9ac24bf6faf013c5dff1af3525a31fbb13f
-vendor/lib64/libril-qc-qmi-1.so|0914338c263c627f136d633f606a6baa19f1e936|038681199669b32935eda4de41d700cda414f4c6
+# Radio - from CPH1611
+vendor/lib64/libqmiservices.so:vendor/lib64/libQmiservices.so|f2f6552892aa996c41ed29e8120834d27f0e2a1f
+vendor/lib64/libril-qc-qmi-1.so|a6c10b34cad146fa6deef3108cb2dd6ee291985c|cd5f3f0f696218fe2ecd296f856e35e5694a4914
 
 # Sensors config
-system/etc/sensors/sensor_def_16017.conf:vendor/etc/sensor_def/16017/sensor_def_qcomdev.conf
-system/etc/sensors/sensor_def_16027.conf:vendor/etc/sensor_def/16027/sensor_def_qcomdev.conf
+system/etc/sensors/sensor_def_16037.conf:vendor/etc/sensor_def/16037/sensor_def_qcomdev.conf
+
+# Sensors config - from CPH1611
+system/etc/sensors/sensor_def_16037.conf:vendor/etc/sensor_def/16337/sensor_def_qcomdev.conf|40a52379f729faefe7186f363ef77c38407d5f96
+system/etc/sensors/sensor_def_16339.conf:vendor/etc/sensor_def/16339/sensor_def_qcomdev.conf|128d4d244ffe906e0742e3d1c578b82e48c4bb84
