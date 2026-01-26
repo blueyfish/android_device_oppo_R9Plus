@@ -12,6 +12,9 @@ TARGET_BOOTLOADER_BOARD_NAME := msm8952
 # Platform
 TARGET_BOARD_PLATFORM := msm8952
 
+# Partitions
+TARGET_VENDOR_PARTITION := cache
+
 # Inherit from common device tree
 include device/oppo/thortanium-common/BoardConfigCommon.mk
 
