@@ -346,6 +346,22 @@ system/etc/firmware/fingerprint.b05:vendor/firmware/fingerprint.b05|74a2339683cb
 system/etc/firmware/fingerprint.b06:vendor/firmware/fingerprint.b06|341f188722aab317d78fdbdfdd0fbe52b2c0f25f
 system/etc/firmware/fingerprint.mdt:vendor/firmware/fingerprint.mdt|2497e566ed8e34b9414ed52f26dfcee4ab5bbef3
 
+# Media firmware
+system/etc/firmware/venus.b00:vendor/firmware/venus.b00
+system/etc/firmware/venus.b01:vendor/firmware/venus.b01
+system/etc/firmware/venus.b02:vendor/firmware/venus.b02
+system/etc/firmware/venus.b03:vendor/firmware/venus.b03
+system/etc/firmware/venus.b04:vendor/firmware/venus.b04
+system/etc/firmware/venus.mbn:vendor/firmware/venus.mbn
+system/etc/firmware/venus.mdt:vendor/firmware/venus.mdt
+system/etc/firmware/venus-v1.b00:vendor/firmware/venus-v1.b00
+system/etc/firmware/venus-v1.b01:vendor/firmware/venus-v1.b01
+system/etc/firmware/venus-v1.b02:vendor/firmware/venus-v1.b02
+system/etc/firmware/venus-v1.b03:vendor/firmware/venus-v1.b03
+system/etc/firmware/venus-v1.b04:vendor/firmware/venus-v1.b04
+system/etc/firmware/venus-v1.mbn:vendor/firmware/venus-v1.mbn
+system/etc/firmware/venus-v1.mdt:vendor/firmware/venus-v1.mdt
+
 # Radio
 system/bin/rmt_storage:vendor/bin/rmt_storage
 
