@@ -1,4 +1,5 @@
 # All unpinned blobs below are extracted from R9sPlus_11.A.15_0150_201908191412
+# CPH1607 Package version: CPH1607EX_11_A.25_190425
 # CPH1611 Package version: CPH1611EX_11.A.22_INT_022_201903070923
 # A57 Package version: A57_11.A.32_0320_201912050917
 # R9s Package version: R9s_11.A.53_0530_201904131805
@@ -365,9 +366,9 @@ system/etc/firmware/venus-v1.mdt:vendor/firmware/venus-v1.mdt
 # Radio
 system/bin/rmt_storage:vendor/bin/rmt_storage
 
-# Radio - from CPH1611
-vendor/lib64/libqmiservices.so:vendor/lib64/libQmiservices.so|f2f6552892aa996c41ed29e8120834d27f0e2a1f
-vendor/lib64/libril-qc-qmi-1.so|a6c10b34cad146fa6deef3108cb2dd6ee291985c|cd5f3f0f696218fe2ecd296f856e35e5694a4914
+# Radio - from CPH1607
+vendor/lib64/libqmiservices.so:vendor/lib64/libQmiservices.so|329bd9ac24bf6faf013c5dff1af3525a31fbb13f
+vendor/lib64/libril-qc-qmi-1.so|0914338c263c627f136d633f606a6baa19f1e936|038681199669b32935eda4de41d700cda414f4c6
 
 # Sensors config
 system/etc/sensors/sensor_def_16037.conf:vendor/etc/sensor_def/16037/sensor_def_qcomdev.conf
