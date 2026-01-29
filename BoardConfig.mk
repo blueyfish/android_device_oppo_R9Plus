@@ -39,7 +39,7 @@ TARGET_KERNEL_RECOVERY_CONFIG := lineageos_R9sPlus_recovery_defconfig
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2018-08-05
+VENDOR_SECURITY_PATCH := 2018-06-05
 
 # SEPolicy
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
