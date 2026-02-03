@@ -134,14 +134,6 @@
         <device name="SND_DEVICE_IN_SPEAKER_QMIC_AEC" acdb_id="121"/>
         <device name="SND_DEVICE_IN_SPEAKER_QMIC_NS" acdb_id="120"/>
         <device name="SND_DEVICE_IN_SPEAKER_QMIC_AEC_NS" acdb_id="105"/>
-        <device name="SND_DEVICE_IN_THREE_MIC" acdb_id="125"/>
-        <device name="SND_DEVICE_IN_HANDSET_TMIC" acdb_id="126"/>
-        <device name="SND_DEVICE_IN_UNPROCESSED_MIC" acdb_id="127"/>
-        <device name="SND_DEVICE_IN_UNPROCESSED_STEREO_MIC" acdb_id="129"/>
-        <device name="SND_DEVICE_IN_UNPROCESSED_THREE_MIC" acdb_id="46"/>
-        <device name="SND_DEVICE_IN_UNPROCESSED_QUAD_MIC" acdb_id="125"/>
-        <device name="SND_DEVICE_IN_UNPROCESSED_HEADSET_MIC" acdb_id="143"/>
-        <device name="SND_DEVICE_IN_HEADSET_MIC_KTV" acdb_id="144"/>
     </acdb_ids>
 
     <backend_names>
