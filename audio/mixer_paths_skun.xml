@@ -97,7 +97,7 @@
 
     <ctl name="AK4376 PDN Control" value="Off" />
     <ctl name="AK4376 BICK Output Frequency" value="2" />
-    <ctl name="AK4376 BICK Frequency Select" value="0" />
+    <ctl name="AK4376 BICK Frequency Select" value="32fs" />
     <ctl name="AK4376 HP-Amp Analog Volume" value="0" />
     <ctl name="AK4376 HPL Mixer LDACL" value="0" />
     <ctl name="AK4376 HPR Mixer RDACR" value="0" />
@@ -1127,7 +1127,7 @@
         <ctl name="MI2S_RX Channels" value="Two" />
         <ctl name="AK4376 PDN Control" value="On" />
         <ctl name="AK4376 BICK Output Frequency" value="2" />
-        <ctl name="AK4376 BICK Frequency Select" value="0" />
+        <ctl name="AK4376 BICK Frequency Select" value="64fs" />
         <ctl name="AK4376 HP-Amp Analog Volume" value="11" />
         <ctl name="AK4376 HPL Mixer LDACL" value="1" />
         <ctl name="AK4376 HPR Mixer RDACR" value="1" />
@@ -1182,7 +1182,6 @@
 
     <path name="voice-headphones">
         <path name="headphones" />
-        <ctl name="AK4376 BICK Frequency Select" value="0" />
         <ctl name="MI2S_RX Format" value="S16_LE" />
     </path>
 
