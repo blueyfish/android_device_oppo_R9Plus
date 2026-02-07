@@ -6,36 +6,31 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-separate_soft=16037 # default
 operator_name=$(cat /proc/oppoVersion/operatorName)
 
 if [ $operator_name = 8 ] || [ $operator_name = 9 ]; then # China
     # Separate soft
-    separate_soft=16037
+    setprop ro.separate.soft 15103
 
-    # IMEI SV
-    if [ $operator_name = 8 ]; then # R9s Plus
-        setprop ro.vendor.radio.imei.sv 15
-    elif [ $operator_name = 9 ]; then # R9s Plust
-        setprop ro.vendor.radio.imei.sv 2
-    fi
-else # Global
-    # Separate soft
+    # WiFi NV
     case $operator_name in
-        "102" ) # CPH1611
-            separate_soft=16337
+        "2" ) # 15110 CMCC
+            setprop ro.vendor.wifi.nv 15110
             ;;
-        * ) # CPH1613 - 104, 106
-            separate_soft=16339
+        * ) # 15103
+            setprop ro.vendor.wifi.nv 15103
             ;;
     esac
 
     # IMEI SV
-    setprop ro.vendor.radio.imei.sv 22
+    setprop ro.vendor.radio.imei.sv 29
+else # Global
+    # Separate soft
+    setprop ro.separate.soft 16303
+
+    # WiFi NV
+    setprop ro.vendor.wifi.nv 16303
+
+    # IMEI SV
+    setprop ro.vendor.radio.imei.sv 15
 fi
-
-# Set separate soft property
-setprop ro.separate.soft $separate_soft
-
-# WiFi NV
-setprop ro.vendor.wifi.nv $separate_soft
