@@ -16,97 +16,53 @@
 
 using android::base::ReadFileToString;
 
-static const variant_info_t r9splus_info = {
+static const variant_info_t r9plus_info = {
     .brand = "OPPO",
-    .device = "R9sPlus",
+    .device = "R9PlusA",
     .marketname = "OPPO R9s Plus",
-    .model = "OPPO R9s Plus",
-    .build_fingerprint = "OPPO/R9sPlus/R9sPlus:6.0.1/MMB29M/1523881866:user/release-keys",
-    .build_description = "msm8952_64-user 6.0.1 MMB29M eng.root.20190819.142943 dev-keys",
+    .model = "OPPO R9 Plusm A",
+    .build_fingerprint = "OPPO/R9PlusmA/R9PlusA:5.1.1/LMY47V/1521209354:user/release-keys",
+    .build_description = "msm8952_64-user 5.1.1 LMY47V eng.root.20190904.035419 dev-keys",
 };
 
-static const variant_info_t r9splust_info = {
+static const variant_info_t r9plust_info = {
     .brand = "OPPO",
-    .device = "R9sPlus",
+    .device = "R9PlusA",
     .marketname = "OPPO R9s Plust",
-    .model = "OPPO R9s Plust",
-    .build_fingerprint = "OPPO/R9sPlust/R9sPlus:6.0.1/MMB29M/1483618348:user/release-keys",
-    .build_description = "msm8952_64-user 6.0.1 MMB29M eng.root.20170402.100632 dev-keys",
+    .model = "OPPO R9 Plustm A",
+    .build_fingerprint = "OPPO/R9PlustmA/R9PlusA:5.1.1/LMY47V/1521209354:user/release-keys",
+    .build_description = "msm8952_64-user 5.1.1 LMY47V eng.root.20190904.035419 dev-keys",
 };
 
-static const variant_info_t cph1611_info = {
+static const variant_info_t x9079_info = {
     .brand = "OPPO",
-    .device = "CPH1611",
+    .device = "X9079",
     .marketname = "OPPO R9s Plus",
-    .model = "CPH1611",
-    .build_fingerprint = "Android/msm8952_64/msm8952_64:6.0.1/MMB29M/root03071007:user/release-keys",
-    .build_description = "msm8952_64-user 6.0.1 MMB29M eng.root.20190307.100547 release-keys",
-};
-
-static const variant_info_t cph1613_info = {
-    .brand = "OPPO",
-    .device = "CPH1613",
-    .marketname = "OPPO F3 Plus",
-    .model = "CPH1613",
-    .build_fingerprint = "Android/msm8952_64/msm8952_64:6.0.1/MMB29M/root03071007:user/release-keys",
-    .build_description = "msm8952_64-user 6.0.1 MMB29M eng.root.20190307.100547 release-keys",
-};
-
-static const variant_info_t cph1613fw_info = {
-    .brand = "OPPO",
-    .device = "CPH1613fw",
-    .marketname = "OPPO F3 Plus",
-    .model = "CPH1613fw",
-    .build_fingerprint = "Android/msm8952_64/msm8952_64:6.0.1/MMB29M/root03071007:user/release-keys",
-    .build_description = "msm8952_64-user 6.0.1 MMB29M eng.root.20190307.100547 release-keys",
-};
-
-static const variant_info_t cph1613_th_info = {
-    .brand = "OPPO",
-    .device = "CPH1613",
-    .marketname = "OPPO R9s Plus",
-    .model = "CPH1613",
-    .build_fingerprint = "Android/msm8952_64/msm8952_64:6.0.1/MMB29M/root03071007:user/release-keys",
-    .build_description = "msm8952_64-user 6.0.1 MMB29M eng.root.20190307.100547 release-keys",
+    .model = "X9079",
+    .build_fingerprint = "OPPO/msm8952_64/msm8952_64:5.1.1/LMY47V/root03041246:user/release-keys",
+    .build_description = "msm8952_64-user 5.1.1 LMY47V eng.root.20190304.124440 release-keys",
 };
 
 static void determine_device() {
-    if (ReadProjectVersion() == 16037) {
+    if (ReadProjectVersion() == 15103) {
         switch (ReadOperatorName()) {
             /* China */
             case 8:
-                set_variant_props(r9splus_info);
+                set_variant_props(r9plus_info);
                 break;
 
             case 9:
-                set_variant_props(r9splust_info);
+                set_variant_props(r9plust_info);
                 break;
 
             /* Global */
-            case 102:
-                set_variant_props(cph1611_info);
+            case 101:
+                set_variant_props(x9079_info);
                 break;
-
-            case 104:
-            case 106:
-            {
-                std::string reserve_exp1;
-                if (ReadFileToString("/dev/block/bootdevice/by-name/reserve_exp1", &reserve_exp1)) {
-                    if (!strncmp(reserve_exp1.c_str(), "00010001", 8)) {
-                        set_variant_props(cph1613fw_info);
-                        break;
-                    } else if (!strncmp(reserve_exp1.c_str(), "00110001", 8)) {
-                        set_variant_props(cph1613_th_info);
-                        break;
-                    }
-                }
-                set_variant_props(cph1613_info);
-                break;
-            }
 
             default:
-                LOG(WARNING) << "Unknown operator variant, setting R9sPlus";
-                set_variant_props(r9splus_info);
+                LOG(WARNING) << "Unknown operator variant, setting X9079";
+                set_variant_props(x9079_info);
                 break;
         }
     } else {
