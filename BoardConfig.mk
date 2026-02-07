@@ -9,6 +9,9 @@ DEVICE_PATH := device/oppo/R9Plus
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := msm8952
 
+# Kernel
+TARGET_NEEDS_OPPO_VERITY_FAKESIGN := false
+
 # Platform
 TARGET_BOARD_PLATFORM := msm8952
 
