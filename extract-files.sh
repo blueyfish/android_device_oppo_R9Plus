@@ -8,10 +8,6 @@
 
 function blob_fixup() {
     case "${1}" in
-        vendor/bin/rmt_storage)
-            # Drop IO priority set-up
-            sed -i "s|\xe0\x0f\x1f\x32|\x0e\x00\x00\x14|g" "${2}"
-            ;;
         vendor/lib64/hw/fingerprint.msm8952.so)
             "${PATCHELF_0_17_2}" --add-needed "libbinder_shim.so" "${2}"
             ;;
