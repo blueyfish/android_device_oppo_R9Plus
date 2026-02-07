@@ -55,7 +55,7 @@ fi
 
 set -e
 
-export DEVICE=R9sPlus
+export DEVICE=R9Plus
 export DEVICE_COMMON=thortanium-common
 export VENDOR=oppo
 

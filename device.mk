@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/oppo/R9sPlus
+DEVICE_PATH := device/oppo/R9Plus
 
 # Inherit from the common device configuration.
 TARGET_OPPO_PLATFORM := msm8952
@@ -33,11 +33,11 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    R9sPlus_camera_config.xml
+    R9Plus_camera_config.xml
 
 # Input
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/keylayout/synaptics-s3320.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/synaptics-s3320.kl
+    $(DEVICE_PATH)/keylayout/synaptics_s1302.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/synaptics_s1302.kl
 
 # Rootdir
 PRODUCT_PACKAGES += \
@@ -55,4 +55,4 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/wifi/WCNSS_qcom_wlan_nv_16339.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/16339/WCNSS_qcom_wlan_nv.bin
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/oppo/R9sPlus/R9sPlus-vendor.mk)
+$(call inherit-product, vendor/oppo/R9Plus/R9Plus-vendor.mk)

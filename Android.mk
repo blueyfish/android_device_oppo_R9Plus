@@ -6,7 +6,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),R9sPlus)
+ifeq ($(TARGET_DEVICE),R9Plus)
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
