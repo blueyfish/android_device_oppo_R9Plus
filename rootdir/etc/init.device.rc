@@ -18,3 +18,13 @@ on early-init
 
     # Miscellaneous variant specific files
     mount overlay overlay /vendor/etc/sensors ro lowerdir=/vendor/etc/sensor_def/${ro.separate.soft}:/vendor/etc/sensors
+
+service vendor.qkmloader /vendor/bin/qkmloader
+   class core
+   user root
+   group root
+
+on init
+   # vold needs keymaster that needs qkmloader
+   # qkmloader requires qseecomd to load fw
+   start vendor.qkmloader

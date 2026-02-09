@@ -39,6 +39,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/keylayout/synaptics_s1302.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/synaptics_s1302.kl
 
+# Keymaster
+PRODUCT_PACKAGES += \
+    qkmloader
+
 # Rootdir
 PRODUCT_PACKAGES += \
     init.device.rc \
