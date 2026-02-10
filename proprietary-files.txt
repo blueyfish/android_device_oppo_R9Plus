@@ -364,7 +364,7 @@ system/etc/firmware/venus-v1.mbn:vendor/firmware/venus-v1.mbn
 system/etc/firmware/venus-v1.mdt:vendor/firmware/venus-v1.mdt
 
 # Radio - from R9Plus
-system/bin/rmt_storage:vendor/bin/rmt_storage|ded6755cb8668bb5a517c273b7261f77cf8590a0
+system/bin/rmt_storage:vendor/bin/rmt_storage|ded6755cb8668bb5a517c273b7261f77cf8590a0|3a801b954f0e9652147db759240095ed68e6c25e
 
 # Radio - from CPH1607
 vendor/lib64/libqmiservices.so:vendor/lib64/libQmiservices.so|329bd9ac24bf6faf013c5dff1af3525a31fbb13f
