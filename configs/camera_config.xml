@@ -95,7 +95,7 @@ LensInfo : Information of the lens present in the module.
     <EepromName>semco_cat24c64</EepromName>
     <SemcoEepromName>semco_cat24c64</SemcoEepromName>
     <SunnyEepromName>sunny_cat24c64</SunnyEepromName>
-    <FlashName>lm3642</FlashName>
+    <FlashName>lm3643</FlashName>
     <ChromatixName>imx398_chromatix</ChromatixName>
     <SunnyChromatixName>imx398_sunny_chromatix</SunnyChromatixName>
     <ModesSupported>1</ModesSupported>
@@ -151,7 +151,7 @@ LensInfo : Information of the lens present in the module.
     <SunnyActuatorName>dw9718s</SunnyActuatorName>
     <SemcoActuatorName>lc898217xc</SemcoActuatorName>
     <EepromName>semco_cat24c64</EepromName>
-    <FlashName>lm3642</FlashName>
+    <FlashName>lm3643</FlashName>
     <ChromatixName>imx298_chromatix</ChromatixName>
     <SunnyChromatixName>imx298_sunny_chromatix</SunnyChromatixName>
     <ModesSupported>1</ModesSupported>
