@@ -21,8 +21,8 @@ static const variant_info_t r9plus_info = {
     .device = "R9PlusA",
     .marketname = "OPPO R9s Plus",
     .model = "OPPO R9 Plusm A",
-    .build_fingerprint = "OPPO/R9PlusmA/R9PlusA:5.1.1/LMY47V/1521209354:user/release-keys",
-    .build_description = "msm8952_64-user 5.1.1 LMY47V eng.root.20190904.035419 dev-keys",
+    .build_fingerprint = "OPPO/R9PlusmA/R9PlusA:6.0.1/MMB29M/1481606711:user/release-keys",
+    .build_description = "msm8952_64-user 6.0.1 MMB29M eng.root.20181020.181815 dev-keys",
 };
 
 static const variant_info_t r9plust_info = {
@@ -30,8 +30,8 @@ static const variant_info_t r9plust_info = {
     .device = "R9PlusA",
     .marketname = "OPPO R9s Plust",
     .model = "OPPO R9 Plustm A",
-    .build_fingerprint = "OPPO/R9PlustmA/R9PlusA:5.1.1/LMY47V/1521209354:user/release-keys",
-    .build_description = "msm8952_64-user 5.1.1 LMY47V eng.root.20190904.035419 dev-keys",
+    .build_fingerprint = "OPPO/R9PlustmA/R9PlusA:6.0.1/MMB29M/1390465867:user/release-keys",
+    .build_description = "msm8952_64-user 6.0.1 MMB29M eng.root.20181020.181815 dev-keys",
 };
 
 static const variant_info_t x9079_info = {
@@ -39,8 +39,8 @@ static const variant_info_t x9079_info = {
     .device = "X9079",
     .marketname = "OPPO R9s Plus",
     .model = "X9079",
-    .build_fingerprint = "OPPO/msm8952_64/msm8952_64:5.1.1/LMY47V/root03041246:user/release-keys",
-    .build_description = "msm8952_64-user 5.1.1 LMY47V eng.root.20190304.124440 release-keys",
+    .build_fingerprint = "Android/msm8952_64/msm8952_64:6.0.1/MMB29M/root03111719:user/release-keys",
+    .build_description = "msm8952_64-user 6.0.1 MMB29M eng.root.20170311.171546 release-keys",
 };
 
 static void determine_device() {
