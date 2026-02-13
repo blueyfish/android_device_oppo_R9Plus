@@ -79,9 +79,6 @@ vendor/lib/libseemore.so|deec672a5ae3dc607621508c6f971001150b8cc7|a870c646f23e44
 vendor/lib/libtrueportrait.so|b8e11c098bd859aae6c535cdb87e3e36f6b1c6ef|6aad0281ab7902e93f9dac430c8bff50aeee042c
 vendor/lib/libubifocus.so|833a305c780b2e7e338323c5ba27cb042f5cc3ed|36b90ab4196e71972d716149785142b4b9623536
 
-# Camera - from R9Plus
-vendor/lib/libflash_lm3643.so|b89e6e227bfca55583ad3df5cf94699751019432
-
 # Camera actuators - from A57
 vendor/lib/libactuator_dw9718s.so|217a67c1063875e61044939c99e10760616d5798
 vendor/lib/libactuator_lc898217xc.so|fb8ccb52e21a5680572edb92a026f655d511c8fb
