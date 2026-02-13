@@ -1,3 +1,6 @@
+# Display
+vendor.display.disable_rotator_ubwc=1
+
 # SoC
 ro.soc.model=MSM8976
 
