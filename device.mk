@@ -53,9 +53,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini \
-    $(DEVICE_PATH)/wifi/WCNSS_qcom_wlan_nv_15103.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/15103/WCNSS_qcom_wlan_nv.bin \
-    $(DEVICE_PATH)/wifi/WCNSS_qcom_wlan_nv_15110.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/15110/WCNSS_qcom_wlan_nv.bin \
-    $(DEVICE_PATH)/wifi/WCNSS_qcom_wlan_nv_16303.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/16303/WCNSS_qcom_wlan_nv.bin
+    $(DEVICE_PATH)/wifi/WCNSS_qcom_wlan_nv_15103.bin:$(TARGET_COPY_OUT_ODM)/firmware/wlan/15103/WCNSS_qcom_wlan_nv.bin \
+    $(DEVICE_PATH)/wifi/WCNSS_qcom_wlan_nv_15110.bin:$(TARGET_COPY_OUT_ODM)/firmware/wlan/15110/WCNSS_qcom_wlan_nv.bin \
+    $(DEVICE_PATH)/wifi/WCNSS_qcom_wlan_nv_16303.bin:$(TARGET_COPY_OUT_ODM)/firmware/wlan/16303/WCNSS_qcom_wlan_nv.bin
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/oppo/R9Plus/R9Plus-vendor.mk)

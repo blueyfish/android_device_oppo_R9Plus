@@ -5,16 +5,16 @@
 # R9s Package version: R9s_11.A.53_0530_201904131805
 
 # ACDB
-system/etc/acdbdata/15103/Bluetooth_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
-system/etc/acdbdata/15103/General_cal.acdb:vendor/etc/acdbdata/MTP/MTP_General_cal.acdb
-system/etc/acdbdata/15103/Global_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Global_cal.acdb
-system/etc/acdbdata/15103/Handset_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Handset_cal.acdb
-system/etc/acdbdata/15103/Hdmi_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
-system/etc/acdbdata/15103/Headset_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Headset_cal.acdb
-system/etc/acdbdata/15103/Speaker_cal.acdb:vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
+system/etc/acdbdata/15103/Bluetooth_cal.acdb:odm/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
+system/etc/acdbdata/15103/General_cal.acdb:odm/etc/acdbdata/MTP/MTP_General_cal.acdb
+system/etc/acdbdata/15103/Global_cal.acdb:odm/etc/acdbdata/MTP/MTP_Global_cal.acdb
+system/etc/acdbdata/15103/Handset_cal.acdb:odm/etc/acdbdata/MTP/MTP_Handset_cal.acdb
+system/etc/acdbdata/15103/Hdmi_cal.acdb:odm/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
+system/etc/acdbdata/15103/Headset_cal.acdb:odm/etc/acdbdata/MTP/MTP_Headset_cal.acdb
+system/etc/acdbdata/15103/Speaker_cal.acdb:odm/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 
 # Audio firmware
-system/etc/firmware/tfa98xx.cnt:vendor/firmware/tfa98xx.cnt
+system/etc/firmware/tfa98xx.cnt:odm/firmware/tfa98xx.cnt
 
 # Camera - from A57
 system/bin/mm-qcamera-daemon:vendor/bin/mm-qcamera-daemon|f43137738f2c97bce97e7dec86adcb3c7aaa698a|5d0dcec2c198cbd8df186ad445a0eefbea4bb6a2
@@ -217,24 +217,24 @@ system/lib64/lib_fpc_tac_shared.so:vendor/lib64/lib_fpc_tac_shared.so
 system/lib64/libalipay_factory.so:vendor/lib64/libalipay_factory.so
 
 # Fingerprint - Alipay firmware
-system/etc/firmware/alipay.b00:vendor/firmware/alipay.b00
-system/etc/firmware/alipay.b01:vendor/firmware/alipay.b01
-system/etc/firmware/alipay.b02:vendor/firmware/alipay.b02
-system/etc/firmware/alipay.b03:vendor/firmware/alipay.b03
-system/etc/firmware/alipay.b04:vendor/firmware/alipay.b04
-system/etc/firmware/alipay.b05:vendor/firmware/alipay.b05
-system/etc/firmware/alipay.b06:vendor/firmware/alipay.b06
-system/etc/firmware/alipay.mdt:vendor/firmware/alipay.mdt
+system/etc/firmware/alipay.b00:odm/firmware/alipay.b00
+system/etc/firmware/alipay.b01:odm/firmware/alipay.b01
+system/etc/firmware/alipay.b02:odm/firmware/alipay.b02
+system/etc/firmware/alipay.b03:odm/firmware/alipay.b03
+system/etc/firmware/alipay.b04:odm/firmware/alipay.b04
+system/etc/firmware/alipay.b05:odm/firmware/alipay.b05
+system/etc/firmware/alipay.b06:odm/firmware/alipay.b06
+system/etc/firmware/alipay.mdt:odm/firmware/alipay.mdt
 
 # Fingerprint - FPC firmware
-system/etc/firmware/fingerprint.b00:vendor/firmware/fingerprint.b00
-system/etc/firmware/fingerprint.b01:vendor/firmware/fingerprint.b01
-system/etc/firmware/fingerprint.b02:vendor/firmware/fingerprint.b02
-system/etc/firmware/fingerprint.b03:vendor/firmware/fingerprint.b03
-system/etc/firmware/fingerprint.b04:vendor/firmware/fingerprint.b04
-system/etc/firmware/fingerprint.b05:vendor/firmware/fingerprint.b05
-system/etc/firmware/fingerprint.b06:vendor/firmware/fingerprint.b06
-system/etc/firmware/fingerprint.mdt:vendor/firmware/fingerprint.mdt
+system/etc/firmware/fingerprint.b00:odm/firmware/fingerprint.b00
+system/etc/firmware/fingerprint.b01:odm/firmware/fingerprint.b01
+system/etc/firmware/fingerprint.b02:odm/firmware/fingerprint.b02
+system/etc/firmware/fingerprint.b03:odm/firmware/fingerprint.b03
+system/etc/firmware/fingerprint.b04:odm/firmware/fingerprint.b04
+system/etc/firmware/fingerprint.b05:odm/firmware/fingerprint.b05
+system/etc/firmware/fingerprint.b06:odm/firmware/fingerprint.b06
+system/etc/firmware/fingerprint.mdt:odm/firmware/fingerprint.mdt
 
 # Media firmware
 system/etc/firmware/venus.b00:vendor/firmware/venus.b00
@@ -260,7 +260,7 @@ vendor/lib64/libqmiservices.so:vendor/lib64/libQmiservices.so|329bd9ac24bf6faf01
 vendor/lib64/libril-qc-qmi-1.so|0914338c263c627f136d633f606a6baa19f1e936|038681199669b32935eda4de41d700cda414f4c6
 
 # Sensors config
-system/etc/sensors/sensor_def_qcomdev.conf:vendor/etc/sensor_def/16303/sensor_def_qcomdev.conf
+system/etc/sensors/sensor_def_qcomdev.conf:odm/etc/sensor_def/16303/sensor_def_qcomdev.conf
 
 # Sensors config - from R9Plus
-system/etc/sensors/sensor_def_qcomdev.conf:vendor/etc/sensor_def/15103/sensor_def_qcomdev.conf|af48aee5dc9316c67e8cacb560167c60915666ea
+system/etc/sensors/sensor_def_qcomdev.conf:odm/etc/sensor_def/15103/sensor_def_qcomdev.conf|af48aee5dc9316c67e8cacb560167c60915666ea
