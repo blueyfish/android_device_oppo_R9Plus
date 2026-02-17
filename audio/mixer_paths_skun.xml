@@ -140,9 +140,9 @@
     <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia13" value="0" />
     <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia14" value="0" />
     <ctl name="QUAT_MI2S_RX Port Mixer INTERNAL_BT_SCO_TX" value="0" />
-    <ctl name="mono Profile" value="0" />
-    <ctl name="mono Music Playback Volume" value="0" />
-    <ctl name="mono Stop" value="off" />
+    <ctl name="left Profile" value="0" />
+    <ctl name="left Music Playback Volume" value="0" />
+    <ctl name="left Stop" value="off" />
 
     <!-- Voice BTSCO -->
     <ctl name="Internal BTSCO SampleRate" value="BTSCO_RATE_8KHZ" />
@@ -1075,7 +1075,7 @@
     </path>
 
     <path name="speaker">
-        <ctl name="mono Profile" value="MUSIC_48000" />
+        <ctl name="left Profile" value="MUSIC_48000" />
     </path>
 
     <path name="wsa-speaker">
@@ -1169,7 +1169,7 @@
     </path>
 
     <path name="voice-speaker">
-        <ctl name="mono Profile" value="VOICE_48000" />
+        <ctl name="left Profile" value="VOICE_48000" />
     </path>
 
     <path name="wsa-voice-speaker">
