@@ -13,6 +13,24 @@ system/etc/acdbdata/15103/Hdmi_cal.acdb:odm/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
 system/etc/acdbdata/15103/Headset_cal.acdb:odm/etc/acdbdata/MTP/MTP_Headset_cal.acdb
 system/etc/acdbdata/15103/Speaker_cal.acdb:odm/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 
+# ADSP firmware - from CPH1607
+odm/firmware/adsp/adsp.b00|60243b9bf8ed702dee23bc0e84688295c59e6862
+odm/firmware/adsp/adsp.b01|a5f94822263143e4c1fdf7cf515cb636c695ba1a
+odm/firmware/adsp/adsp.b02|bb7910345e854fcf6cc2838508e5a23656555a94
+odm/firmware/adsp/adsp.b03|ad70e30c5b3a8c81727af947749b8eecf680a1f7
+odm/firmware/adsp/adsp.b04|43c4321dcf38d2349812d55fd5f0d803690aa5c5
+odm/firmware/adsp/adsp.b05|01c74896e67df05eaba8d25d2128f2ab18f633a7
+odm/firmware/adsp/adsp.b06|4b448da64dc8794e9e7c2dea6703af15bb510e7b
+odm/firmware/adsp/adsp.b07|46f7958a1962a693b1268ddb48d59065f4792fd2
+odm/firmware/adsp/adsp.b08|02b31ce6cb59cf84f68da687ac63799282aca64b
+odm/firmware/adsp/adsp.b09|75cde5e0af6daba6dea24de618bdc374ec99dc8c
+odm/firmware/adsp/adsp.b10|76419632c90125334ba81adcc57f0b1e3cc8b591
+odm/firmware/adsp/adsp.b11|483801eca0285df5344589a55591536705810ef2
+odm/firmware/adsp/adsp.b12|0ce97d02b45318d4021682c7ca9df25c36dc32f2
+odm/firmware/adsp/adsp.b13|e2c0bdd485484f5ff63e130674ab64f9ab687bed
+odm/firmware/adsp/adsp.mbn|c9c3aea678bd101c99468a6c8342fb1be5b91c38
+odm/firmware/adsp/adsp.mdt|9d55b8e129c8e7c5e8bc647eb362ac71f65e0712
+
 # Audio firmware
 system/etc/firmware/tfa98xx.cnt:odm/firmware/tfa98xx.cnt
 

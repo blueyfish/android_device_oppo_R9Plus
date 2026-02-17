@@ -16,6 +16,7 @@ on early-init
     # Mount ODM moved files
     mount overlay overlay /vendor/etc/acdbdata ro lowerdir=/odm/etc/acdbdata:/vendor/etc/acdbdata
     mount overlay overlay /vendor/firmware ro lowerdir=/odm/firmware:/vendor/firmware
+    mount overlay overlay /vendor/firmware_mnt/image ro lowerdir=/odm/firmware/adsp:/vendor/firmware_mnt/image
 
     # WiFi NV
     mount overlay overlay /vendor/firmware/wlan/prima ro lowerdir=/vendor/firmware/wlan/${ro.vendor.wifi.nv}:/vendor/firmware/wlan/prima
